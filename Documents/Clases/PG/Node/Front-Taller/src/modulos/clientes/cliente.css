@@ -1,0 +1,31 @@
+.cliente-module-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .cliente-module-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .sidebar {
+    width: 240px; /* Ancho del sidebar */
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar.closed {
+    width: 60px; /* Ancho del sidebar cuando está cerrado */
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+    margin-left: 240px; /* Desplazamiento cuando el sidebar está abierto */
+  }
+  
+  .main-content.shifted {
+    margin-left: 60px; /* Desplazamiento cuando el sidebar está cerrado */
+  }
+  

@@ -1,0 +1,21 @@
+.dashboard-wrapper {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    flex: 1;
+    transition: margin-left 0.3s ease;
+    margin-left: 60px; /* El margen coincide con el ancho del sidebar cerrado */
+  }
+  
+  .dashboard-container--shift {
+    margin-left: 240px; /* Cuando el sidebar está abierto */
+  }
+  
+  .content {
+    padding: 20px;
+    flex: 1;
+  }
+  
